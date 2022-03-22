@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPone11</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body{
+        font: 400 15px Lato, sans-serif;
+        line-height: 1.8;
+        color: #818181;
+    }
+    .navbar {
+      margin-bottom: 0;
+      background-color: #333131;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1b1a19 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+  
+.main {
+    width: 600px;
+   margin-left: -15px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgb(46, 43, 43);
+    color: rgb(245, 234, 234);
+}
+  
+label {
+    font-size: 20px;
+}
+  
+.btn {
+    width: 200px;
+}
+  
+#finalAmount {
+    font-family: 'Lobster', cursive;
+    display: none;
+    margin: 50px auto;
+}
+  
+#finalAmount h2 {
+    font-size: 50px;
+}
+  
+.finalValue {
+    font-family: 'Amiri', serif;
+}
+  
+@media (max-width: 768px) {
+    hr {
+        width: 60%;
+    }
+    .main {
+        width: 100%;
+    }
+}
+  
+@media (max-width: 400px) {
+    .heading {
+        font-size: 60px;
+    }
+    hr {
+        width: 75%;
+    }
+    #finalAmount h2, .finalValue {
+        font-size: 40px;
+    }
+}
+.convert{
+    margin-right: 70px;
+}
+   
+</style>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage"><ion-icon name="logo-apple"></ion-icon>iPhone</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                
+              <li><a href="IPHONE11.html">IPHONE 11</a></li>
+              <li><a href="IPHONE12.html">IPHONE 12</a></li>
+              <li><a href="IPHONE13.html">IPHONE 13</a></li>
+              <li><a href="korzina.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+              <li><a href="registr.html"><ion-icon name="log-in-outline"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+
+      <div class="container">
+        
+        <div class="media">
+          <div class="media-left media-top">
+            <img src="iphone-11-256-gb-cernyii.jpg" class="media-object" style="width:500px">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">iPhone 11 64 Gb</h4>
+            <p>Новая система двух камер не оставит никого из ваших друзей за кадром. </p>
+            <ul>
+                <li>Наличие в магазине: <b>Под заказ</b></li>
+                <li>Модель: <b>MHDA3LL/A</b></li>
+                <li>UPC: <b>000000020</b></li>
+            </ul>
+            <b>Select your color:</b>
+            <form>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" checked>Black
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">White
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Green
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">Red
+                  </label>
+                  <label class="radio-inline">
+                    <input type="radio" name="optradio">Yellow
+                  </label>
+                  <br>
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" id="quantity" name="quantity" min="1" max="5">  <!--NUMBER2-->
+              </form>
+              
+              <h1>334.900 kzt</h1>
+              <br>
+              
+              <div class="container"> <!--Change Currency-->
+  
+                <div class="main">
+          
+                    <div class="form-group">
+                        <label for="oamount">
+                            Amount to Convert : 
+                        </label>
+                        <input type="text" 
+                               class="form-control searchBox" 
+                               placeholder="0.00" 
+                               id="oamount">
+                    </div>
+          
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">From</span>
+                                </div>
+                                <select class="form-control from" id="sel1">
+                                    <option value="">Select One …</option>
+                                    <option value="USD">USD</option>
+                                    <option value="AED">AED</option>
+                                    <option value="ARS">ARS</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="BGN">BGN</option>
+                                    <option value="BRL">BRL</option>
+                                    <option value="BSD">BSD</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="CHF">CHF</option>
+                                    <option value="CLP">CLP</option>
+                                    <option value="CNY">CNY</option>
+                                    <option value="COP">COP</option>
+                                    <option value="CZK">CZK</option>
+                                    <option value="DKK">DKK</option>
+                                    <option value="DOP">DOP</option>
+                                    <option value="EGP">EGP</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="FJD">FJD</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="GTQ">GTQ</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="HRK">HRK</option>
+                                    <option value="HUF">HUF</option>
+                                    <option value="IDR">IDR</option>
+                                    <option value="ILS">ILS</option>
+                                    <option value="INR">INR</option>
+                                    <option value="ISK">ISK</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="KRW">KRW</option>
+                                    <option value="KZT">KZT</option>
+                                    <option value="MVR">MVR</option>
+                                    <option value="MXN">MXN</option>
+                                    <option value="MYR">MYR</option>
+                                    <option value="NOK">NOK</option>
+                                    <option value="NZD">NZD</option>
+                                    <option value="PAB">PAB</option>
+                                    <option value="PEN">PEN</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="PKR">PKR</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="PYG">PYG</option>
+                                    <option value="RON">RON</option>
+                                    <option value="RUB">RUB</option>
+                                    <option value="SAR">SAR</option>
+                                    <option value="SEK">SEK</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="THB">THB</option>
+                                    <option value="TRY">TRY</option>
+                                    <option value="TWD">TWD</option>
+                                    <option value="UAH">UAH</option>
+                                    <option value="UYU">UYU</option>
+                                    <option value="ZAR">ZAR</option>
+                                </select>
+                            </div>
+                        </div>
+          
+                        <div class="col-sm-6">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">To</span>
+                                </div>
+                                <select class="form-control to" id="sel2">
+                                    <option value="">Select One …</option>
+                                    <option value="USD">USD</option>
+                                    <option value="AED">AED</option>
+                                    <option value="ARS">ARS</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="BGN">BGN</option>
+                                    <option value="BRL">BRL</option>
+                                    <option value="BSD">BSD</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="CHF">CHF</option>
+                                    <option value="CLP">CLP</option>
+                                    <option value="CNY">CNY</option>
+                                    <option value="COP">COP</option>
+                                    <option value="CZK">CZK</option>
+                                    <option value="DKK">DKK</option>
+                                    <option value="DOP">DOP</option>
+                                    <option value="EGP">EGP</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="FJD">FJD</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="GTQ">GTQ</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="HRK">HRK</option>
+                                    <option value="HUF">HUF</option>
+                                    <option value="IDR">IDR</option>
+                                    <option value="ILS">ILS</option>
+                                    <option value="INR">INR</option>
+                                    <option value="ISK">ISK</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="KRW">KRW</option>
+                                    <option value="KZT">KZT</option>
+                                    <option value="MVR">MVR</option>
+                                    <option value="MXN">MXN</option>
+                                    <option value="MYR">MYR</option>
+                                    <option value="NOK">NOK</option>
+                                    <option value="NZD">NZD</option>
+                                    <option value="PAB">PAB</option>
+                                    <option value="PEN">PEN</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="PKR">PKR</option>
+                                    <option value="PLN">PLN</option>
+                                    <option value="PYG">PYG</option>
+                                    <option value="RON">RON</option>
+                                    <option value="RUB">RUB</option>
+                                    <option value="SAR">SAR</option>
+                                    <option value="SEK">SEK</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="THB">THB</option>
+                                    <option value="TRY">TRY</option>
+                                    <option value="TWD">TWD</option>
+                                    <option value="UAH">UAH</option>
+                                    <option value="UYU">UYU</option>
+                                    <option value="ZAR">ZAR</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+          
+                    <div class="text-center">
+          
+                        <!-- convert button -->
+                        <button class="btn btn-primary convert m-2" type="submit">Convert</button>
+          
+                        <!-- reset button -->
+                        <button class="btn btn-primary m-2" onclick="clearVal()">Reset</button>
+                    </div>
+          
+                </div>
+          
+                <div id="finalAmount" class="text-center">
+          
+                    <!-- Display the converted amount -->
+                    <h2>Converted Amount :
+                        <span class="finalValue" 
+                              style="color:rgb(12, 12, 12);">
+                   </span>
+                    </h2>
+                </div>
+            </div>
+          
+            <!-- linking script.js file -->
+            <script src="script.js"></script>
+                
+                
+          </div>
+          <a class="buy" style="color: blanchedalmond;" href="registr.html"><button type="button" class="btn btn-success" style="font-size: 20px;">Buy</button></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <hr>
+        
+
+
+
+
+      <!--CONTACT-->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Kazakhstan, KZ</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +7-707-777-77-77</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>apple_iphone@mail.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>

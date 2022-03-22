@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+</head>
+<style>
+    #panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+     body{
+        font: 400 15px Lato, sans-serif;
+        line-height: 1.8;
+        color: #818181;
+    }
+    .navbar {
+      margin-bottom: 0;
+      background-color: #333131;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #1b1a19 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+ 
+  
+  @media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .container, .slidetoggle, .click {
+    width: 100%;
+  }
+}
+</style>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage"><ion-icon name="logo-apple"></ion-icon>iPhone</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              
+              <li><a href="IPHONE11.html">IPHONE 11</a></li>
+              <li><a href="IPHONE12.html">IPHONE 12</a></li>
+              <li><a href="IPHONE13.html">IPHONE 13</a></li>
+              <li><a href="korzina.html"><ion-icon name="cart-outline"></ion-icon></a></li>
+              <li><a href="registr.html"><ion-icon name="log-in-outline"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+            <div class="container">
+              <button class="click" id="btn1">Click</button>
+              
+              <script>
+                  document.getElementById("btn1").addEventListener("click", function(){
+                  alert("Your bag is empty.")
+                 });
+                 document.getElementById("btn1").addEventListener("click", function(){
+                  alert("order it right now!")
+                 });
+              </script>
+
+            </div>  
+            
+              <br>
+              <br>
+              <div class="slidetoggle">
+              <div id="flip">Sign in to see if you have any saved items. Or continue shopping.</div>
+              <div id="panel"><a href="bonuspr.html">Home page></a></div>
+              </div>
+              <br>
+              <br>
+        
+    </div>   
+    <br>
+    <br>
+    <br>
+    <br><br><br>
+    <hr>
+    
+   
+
+    <!--CONTACT-->
+     <div id="contact" class="container-fluid bg-grey">
+       <h2 class="text-center">CONTACT</h2>
+      <div class="row">
+      <div class="col-sm-5">
+        <p>Contact us and we'll get back to you within 24 hours.</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Kazakhstan, KZ</p>
+        <p><span class="glyphicon glyphicon-phone"></span> +7-707-777-77-77</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>apple_iphone@mail.com</p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+      
+    
+    
+</body>
+</html>
